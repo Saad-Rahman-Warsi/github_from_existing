@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+</head>
+<body>
+     <h1 align="center"><b>Registration Form</b></h1>
+     <hr>
+     <label>First Name</label>
+     <input type="text" name="fname" placeholder="FirstName" size="10" required />
+     <br>
+     <label>Middle Name</label>
+     <input type="text" name="mname" placeholder="MiddleName" size="15">
+     <br>
+     <label>Last Name</label>
+     <input type="text" name="lname" placeholder="LastName" size="10" required />
+     <br>
+     Department
+     <select>
+     	<option selected>Department</option>
+     	<option>Management</option>
+     	<option>Human Resource</option>
+     	<option>Customer Support</option>
+     	<option>Development</option>
+     	<option>Business</option>
+     	<option>Corporating Finance</option>
+     </select> 
+     <br>
+     Gender
+     <br>
+     <input type="radio" id="male" name="gender" value="male">
+     <lable for="male">Male</lable>
+     <br>
+     <input type="radio" id="female" name="gender" value="female">
+     <lable for="female">Female</lable>
+     <br> 
+     <input type="radio" id="Other" name="gender" value="Other">
+     <lable for="Other">Other</lable>
+     <br> 
+     PhoneNo
+     <input type="text" id="cou-code" name="cou-code" value="+91" size="3">
+     <input type="tel" name="ph-no" pattern=[0-9][4]-[0-9][6] required >
+     <br>
+     Contact address
+     <textarea rows="5" cols="100">
+     	TextArea gives special place to write your address
+     </textarea>
+     <br>
+     Drop Your Resume
+     <input type="file" id="resume" name="resume" value="select file">
+     <br>
+     <lable for="email-id">EMail Id</lable>
+     <input type="email" id="email-id" name="email-id" placeholder="enter email id">
+     <br>
+     Password
+     <input type="password" id="code" name="password" placeholder="Enter Password" required >
+     <br>
+     ReType Password
+     <input type="password" id="re-code" name="re-password" placeholder="ReType Password" required >
+     <br>
+     <button type="submit" class="Registration">register</button>
+</body>
+</html>
